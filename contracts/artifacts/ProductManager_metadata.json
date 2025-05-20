@@ -76,11 +76,6 @@
 						"internalType": "string",
 						"name": "_currency",
 						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_imageUrl",
-						"type": "string"
 					}
 				],
 				"name": "createProduct",
@@ -143,11 +138,6 @@
 								"type": "string"
 							},
 							{
-								"internalType": "string",
-								"name": "imageUrl",
-								"type": "string"
-							},
-							{
 								"internalType": "uint256",
 								"name": "timestamp",
 								"type": "uint256"
@@ -205,11 +195,6 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
 					},
 					{
 						"internalType": "string",
@@ -284,11 +269,6 @@
 						"type": "string"
 					},
 					{
-						"internalType": "string",
-						"name": "imageUrl",
-						"type": "string"
-					},
-					{
 						"internalType": "uint256",
 						"name": "timestamp",
 						"type": "uint256"
@@ -333,11 +313,6 @@
 						"internalType": "string",
 						"name": "_currency",
 						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_imageUrl",
-						"type": "string"
 					}
 				],
 				"name": "updateProduct",
@@ -374,11 +349,11 @@
 	},
 	"sources": {
 		"contracts/product.sol": {
-			"keccak256": "0x60b0b8f98da1c90dc1439d6d270de9cbdca546b84ba8c2bd4786a16af4e68a86",
+			"keccak256": "0x12242213ec321a3caa52d6c029989ecc8e6cb40ea336a5494dcbda643a0cc272",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1ff7eae1930cdecbcde2cb3b710a772b6cf52db3bf9686101b32885ec0d072e0",
-				"dweb:/ipfs/QmPwaZVwYL6VAaGgv5EgxoaMF4jbfAFkke49CQNfTFfGdd"
+				"bzz-raw://5099f74d2c65068e287b4e852bc761787cdf3ae14f6c4caff45a788eff513db6",
+				"dweb:/ipfs/QmSScGvo1ev7ByMMusJBsfUCFmzi9gSu1p4ya3o2jfn9wA"
 			]
 		}
 	},

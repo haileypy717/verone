@@ -10,7 +10,6 @@ contract ProductManager {
         uint stock;
         uint priceInWei;
         string currency;
-        string imageUrl;
         uint timestamp;
         bool exists;
     }
@@ -33,8 +32,7 @@ contract ProductManager {
         string memory _description,
         uint _stock,
         uint _priceInWei,
-        string memory _currency,
-        string memory _imageUrl
+        string memory _currency
     ) public {
         productCount++;
         products[productCount] = Product({
@@ -45,7 +43,6 @@ contract ProductManager {
             stock: _stock,
             priceInWei: _priceInWei,
             currency: _currency,
-            imageUrl: _imageUrl,
             timestamp: block.timestamp,
             exists: true
         });
@@ -59,8 +56,7 @@ contract ProductManager {
         string memory _description,
         uint _stock,
         uint _priceInWei,
-        string memory _currency,
-        string memory _imageUrl
+        string memory _currency
     ) public onlyOwner(_id) {
         Product storage p = products[_id];
         p.title = _title;
@@ -68,7 +64,6 @@ contract ProductManager {
         p.stock = _stock;
         p.priceInWei = _priceInWei;
         p.currency = _currency;
-        p.imageUrl = _imageUrl;
         p.timestamp = block.timestamp;
 
         emit ProductUpdated(_id);
@@ -87,7 +82,6 @@ contract ProductManager {
         uint,
         uint,
         string memory,
-        string memory,
         uint
     ) {
         Product memory p = products[_id];
@@ -100,7 +94,6 @@ contract ProductManager {
             p.stock,
             p.priceInWei,
             p.currency,
-            p.imageUrl,
             p.timestamp
         );
     }
